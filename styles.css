@@ -1,0 +1,484 @@
+/* Resetting default styles */
+body,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  /* background-image: url(image/imageheading.gif); */
+  width: 100%;
+  height: auto;
+
+}
+
+/* .hr {
+  border-color: #0056b3;
+
+  width: 35%;
+  display: flex;
+  align-items: start;
+  margin-left: 5px;
+  float: left;
+
+}
+
+.hrtwo {
+  border-color: #0056b3;
+  width: 35%;
+  display: flex;
+  align-items: start;
+  margin-right: 5px;
+  float: right;
+} */
+
+/* Styling header and navigation */
+header {
+  position: fixed;
+  top: 0;
+  background-color: #313135;
+  color: rgb(247, 239, 239);
+  padding: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+
+
+}
+
+.heading {
+  font-size: 45px;
+  /* font-weight: 600; */
+  width: 30%;
+  font-family: Montserrat;
+}
+
+nav {
+  width: 70%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+}
+
+nav ul li {
+  display: inline-block;
+
+  padding: 0px 30px 0px 30px;
+  font-size: 23px;
+  font-family: Montserrat;
+
+  /* font-weight: 800; */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #007bff;
+
+}
+
+main {
+  width: 100%;
+}
+
+.home {
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 120px !important;
+
+
+}
+
+.text {
+  width: 60%;
+  height: 50vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  color: black;
+  flex-direction: column;
+  padding-left: 40px;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin-bottom: 128px;
+}
+
+.text h1 {
+  font-size: 60px;
+
+  box-sizing: border-box;
+  background: transparent;
+  font-family: Montserrat;
+}
+
+.text h2 {
+  font-size: 50px;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+.text h3 {
+  font-size: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+.image {
+  width: 555px;
+  height: 555px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 20px 25px rgb(76, 75, 75);
+  transition: box-shadow 0.3s ease-in-out;
+
+}
+
+/* Add this CSS to your styles.css file */
+
+.image img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  
+  /* margin-bottom: 90px; */
+  /* Add transition for smooth animation */
+}
+
+/* Define a hover effect for the image */
+.image :hover {
+  box-shadow: 0 20px 20px rgb(240, 93, 93);
+  
+  /* Increase the shadow size on hover */
+}
+
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  height: 46px;
+  width: 160px;
+  /* border-radius: 5px; */
+  padding: 10px 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-left: 20px;
+  margin-top: 30px;
+  transition: transform 0.3s;
+  font-size: 16px;
+  background: linear-gradient(to right, #007bff, #0056b3);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* background: linear-gradient(to right, #0056b3, #007bff); */
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  background-color: #f4f4f4;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+
+}
+
+.imagetwo {
+  width: 40%;
+  height: 90vh;
+
+}
+
+.imagetwo img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+margin-top: 110px;
+margin-left: 40px;
+transition: transform 0.3s;
+  /* Add transition for smooth animation */
+}
+
+.imagetwo :hover {
+  /* box-shadow: 0 20px 20px rgb(240, 93, 93); */
+  transform: translateY(-20px);
+  /* Increase the shadow size on hover */
+}
+
+.titlemain {
+  width: 50%;
+  height: 90vh;
+
+  box-sizing: border-box;
+padding-top: 140px;
+margin-left: 300px;
+  
+}
+
+.about h3 {
+  font-size: 50px;
+  
+  font-family: Montserrat;
+}
+
+.about p {
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+  width: 40vw;
+  height: 80px;
+
+}
+
+.about .btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  height: 46px;
+  width: 160px;
+  /* border-radius: 5px; */
+ margin-right: 200px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-right: 210px;
+  margin-top: 30px;
+  transition: transform 0.3s;
+  font-size: 16px;
+  background: linear-gradient(to right, #007bff, #0056b3);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.service {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 70px 0px 40px 0px;
+  background-color: #fff;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  /* border-right: 1px solid rgb(163, 142, 142) ;
+  border-bottom:1px solid rgb(163, 142, 142) ; */
+
+}
+
+.service h3 {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service .card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.service .card h2 {
+  color: #333;
+}
+
+.service .card p {
+  color: #666;
+}
+
+.contact {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #c3c9cf, #c0c7cd);
+
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact h1 {
+  text-align: center;
+  color: #333;
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #0c0b0b;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="submit"] {
+  background-color: #47596b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Add this CSS to your styles.css file */
+
+footer {
+  background-color: #201e1e;
+  color: #fff;
+  padding: 8px 15px 8px 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+.footer-content {
+  /* max-width: 1200px; */
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+
+}
+
+.social-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.social-links li a:hover {
+  color: #0056b3;
+}
+
+.social-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.icon-twitter::before {
+  content: "\f099";
+  /* Unicode for the Twitter icon */
+  font-family: "Font Awesome 5 Free";
+  /* Font family for Font Awesome */
+}
+
+.icon-linkedin::before {
+  content: "\f08c";
+  /* Unicode for the LinkedIn icon */
+  font-family: "Font Awesome 5 Free";
+  /* Font family for Font Awesome */
+}
+
+.icon-github::before {
+  content: "\f09b";
+  /* Unicode for the GitHub icon */
+  font-family: "Font Awesome 5 Free";
+  /* Font family for Font Awesome */
+}
+
+.menu-icon {
+  display: none;
+  /* Hide the menu icon by default */
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+}
+
+@media (max-width: 500px) {
+  .menu-bar {
+    display: block;
+    /* Show the menu bar on small screens */
+  }
+
+  .nav-links ul {
+    display: none;
+    /* Hide the navigation links on small screens */
+  }
+
+  .menu-icon {
+    display: inline-block;
+    /* Show the menu icon on small screens */
+  }
+}
