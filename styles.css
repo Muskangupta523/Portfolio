@@ -39,11 +39,13 @@ header {
   color: rgb(247, 239, 239);
   padding: 10px 0;
   width: 100%;
+  height: 94px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px 10px 10px;
+  margin-top: 0;
 
 
 }
@@ -235,7 +237,7 @@ transition: transform 0.3s;
 }
 
 .titlemain {
-  width: 50%;
+  width: 100%;
   height: 90vh;
 
   box-sizing: border-box;
@@ -257,7 +259,7 @@ margin-left: 300px;
   justify-content: center;
 
   
-  width: 40vw;
+  width: 100%;
   height: 80px;
 
 }
@@ -460,25 +462,137 @@ footer {
 
 .menu-icon {
   display: none;
-  /* Hide the menu icon by default */
-  cursor: pointer;
-  color: #fff;
-  font-size: 24px;
+
 }
-
-@media (max-width: 500px) {
-  .menu-bar {
-    display: block;
-    /* Show the menu bar on small screens */
-  }
-
-  .nav-links ul {
-    display: none;
-    /* Hide the navigation links on small screens */
-  }
-
+@media screen and (max-width:770px) {
   .menu-icon {
-    display: inline-block;
-    /* Show the menu icon on small screens */
+    display: block;
+    padding:25px;
+    
   }
+  .fa-times{
+display: none;
+  }
+  .menu-icon i{
+    font-size: 25px;
+  }
+  nav ul{
+    display: none;
+   width: 100%;
+   height: 100vh;
+   align-items: start;
+   justify-content: start;
+   flex-direction: column;
+   position: absolute;
+   background-color:  #313135;
+   margin-top: 94px;
+
+   left: 0;
+   top: 0;
+   transition: transform 0.3s ease-in-out; /* Adding transition */
+   transform: translateX(-100%); /* Initial transformation */ 
+
+  }
+  nav ul li{
+    padding: 10px;
+    
+  }
+  nav ul li .show{
+    display: flex; 
+  }
+  .image{
+    display: none;
+  }
+  .home{
+    margin-top: 0px;
+    height: auto;
+    padding-bottom: 200px;
+    padding-top: 170px;
+  }
+  .home h1{
+    font-size: 48px;
+    padding-bottom: 10px;
+  }
+  .home h2{
+font-size: 39px;
+padding-bottom: 10px;
+  }
+  .home h3{
+font-size: 34px;
+padding: 0px 0px 10px 0px;
+
+  }
+  .btn{
+    margin-left: 0px;
+  }
+  .home-btn{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  
+  .about{
+   flex-direction: column;
+ width: 100%;
+ 
+  }
+
+  .about p{
+    width: 100%;
+  }
+  .about h3{
+    width: 100%;
+  }
+  .imagetwo{
+    width: 100%;
+    display: none;
+  }
+  .imagetwo img{
+  width: 300px;
+    height: 300px;
+    display: none;
+  }
+  .titlemain{
+    width: 100%;
+    margin: 0px 0px 0px 54px
+
+  }
+  .titlemain p{
+    width: 80%;
+    padding-top: 20px;
+  }
+  .text{
+    width: 100%;
+    margin: 0px;
+    padding-left: 16px;
+    height: auto;
+  }
+  .service{
+    height: auto;
+  }
+  .contact{
+    margin: 20px;
+  }
+  .footer-content{
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer-content p{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .service .card{
+    width: 100%;
+  }
+  .heading{
+    width: 100%;
+  }
+  .btntwo{
+    margin-right: 20px;
+  }
+  
 }

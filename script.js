@@ -1,46 +1,31 @@
-// JavaScript code to add the menu icon dynamically
+var icon = document.querySelector('.menu-icon'); // Selecting the menu icon
+var cross = document.querySelector('.fa-times');
+var menu = document.querySelector('.fa-bars');
+var navList = document.querySelector('nav ul'); // Selecting the navigation list
+var isOpen = false; // Variable to track if the navigation list is open or closed
 
-window.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelector('.nav-links');
-    const menuBar = navLinks.querySelector('.menu-bar');
-
-    function addMenuIcon() {
-        const menuIcon = document.createElement('i');
-        menuIcon.classList.add('fa', 'fa-bars', 'menu-icon');
-        menuIcon.setAttribute('aria-hidden', 'true');
-        menuBar.prepend(menuIcon);
-    }
-
-    function removeMenuIcon() {
-        const menuIcon = menuBar.querySelector('.menu-icon');
-        if (menuIcon) {
-            menuIcon.remove();
-        }
-    }
-
-    function toggleMenu() {
-        menuBar.classList.toggle('active');
-    }
-
-    // Add the menu icon when the screen width is less than 500px
-    function handleResize() {
-        if (window.innerWidth <= 500) {
-            addMenuIcon();
-        } else {
-            removeMenuIcon();
-        }
-    }
-
-    // Event listener for menu icon click to toggle the menu
-    navLinks.addEventListener('click', function(event) {
-        if (event.target.classList.contains('menu-icon')) {
-            toggleMenu();
-        }
-    });
-
-    // Event listener for window resize to handle dynamic menu icon addition/removal
-    window.addEventListener('resize', handleResize);
-
-    // Initial call to handle menu icon on page load
-    handleResize();
+icon.addEventListener('click', function() {
+  toggle();
 });
+
+function toggle() {
+  if (!isOpen) {
+    navList.style.display = 'flex';
+    menu.style.display = 'none';
+    cross.style.display = 'block';
+    // Adding a short delay before applying the transition to ensure it works properly
+    setTimeout(function() {
+      navList.style.transition = 'transform 0.3s ease-in-out'; // Adding transition
+      navList.style.transform = 'translateX(0)'; // Apply transformation to trigger the transition
+    }, 50);
+    isOpen = true;
+  } else {
+    menu.style.display = 'block';
+    cross.style.display = 'none';
+    navList.style.transform = 'translateX(-100%)'; // Apply transformation to hide the list
+    setTimeout(function() {
+      navList.style.display = 'none'; // Hide the list after the transition is complete
+    }, 300); // Adjust the timeout value to match the transition duration
+    isOpen = false;
+  }
+}
